@@ -1,7 +1,7 @@
 import requests
 import math
 
-url = "http://192.168.178.112/api/7CG2FPJ9hYgX8PByZ13IgFvTJ1egUrNLLERb1CoH/lights/4/state"
+url = "http://192.168.178.112/api/*/lights/4/state"
 
 class Hue:
     def __init__(self, ip, code, lamp= []):
@@ -63,6 +63,6 @@ class Hue:
 
     def seturation (self, ipt):
         return
-Hue = Hue('192.168.178.112', '7CG2FPJ9hYgX8PByZ13IgFvTJ1egUrNLLERb1CoH', ['4'])
+Hue = Hue('192.168.178.112', '*', ['4'])
 Hue.color(55,65,250)
 
